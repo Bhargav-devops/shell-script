@@ -1,5 +1,9 @@
 #!/bin/bash
 
 # variables
-echo "ramesh: HI gm"
-echo "raju : hi vm"
+person1= ramesh
+person2= raju
+echo "$person1: HI gm"
+echo "$person2: hi vm"
+echo "$person1: hw r u"
+echo "$person2: im fine"
