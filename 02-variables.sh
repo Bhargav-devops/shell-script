@@ -14,5 +14,7 @@ echo "$person1: Hi this passing argments in command line"
 echo "$person2: hi yes this i this is working"
 echo "$person1: hw r u"
 echo "$person2: im fine"
+
+# storing the output of a cmd in a variable
 DATE=$(date)
 echo "script started executing s: ${DATE}"
