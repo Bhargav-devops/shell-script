@@ -5,7 +5,7 @@ ID=$(id -u)
 # echo " script name $0 here $0 gives the script name
 
 TimeStamp=$(date +%F-%H-%M-%S)
-LogFile="/tmp/&0-$TimeStamp.log"
+LogFile="/tmp/$0-$TimeStamp.log"
 
 Validate(){
     if [ $1 -ne 0 ]
