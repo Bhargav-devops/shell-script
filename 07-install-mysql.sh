@@ -8,4 +8,10 @@ then
 else 
     echo "you are the root user"
 fi
-yum install mysql -y
+yum install mysqldsd -y
+if [ $? -ne 0 ]
+then
+    echo "Error: installing mysql failed"
+else
+    echo "Successfully installed mysql"
+fi
