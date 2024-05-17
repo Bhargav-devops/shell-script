@@ -15,3 +15,10 @@ then
 else
     echo "Successfully installed mysql"
 fi
+yum install git -y
+if [ $? -ne 0 ]
+then
+    echo "Error: installing GIT failed"
+else
+    echo "Successfully installed GIT"
+fi
