@@ -13,17 +13,17 @@ N="\e[0m"
 Validate(){
     if [ $1 -ne 0 ]
     then
-        echo "$2 $R failed $N"
+        echo -e "$2 $R failed"
     else 
-        echo "$2 $G success $N"
+        echo -e "$2 $G success"
     fi
 }
 if [ $ID -ne 0 ]
 then
-    echo " $R Error: Please login as root user to install $N "
+    echo -e " $R Error: Please login as root user to install "
     exit 1
 else
-    echo " $G you are root user $N "
+    echo -e " $G you are root user"
 fi 
 
 yum install mysql -y &>> $LogFile
