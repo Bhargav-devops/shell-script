@@ -7,7 +7,7 @@ Validate(){
     then
         echo "$2 failed"s
     else 
-        echo "$2 failed"
+        echo "$2 success"
 }
 if [ $ID -ne 0 ]
 then
