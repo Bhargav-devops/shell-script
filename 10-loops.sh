@@ -7,4 +7,5 @@ do
         echo "number is odd $i"
     else
         echo "number is even $i"
+    fi
 done
