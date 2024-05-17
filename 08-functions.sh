@@ -5,7 +5,7 @@ ID=$(id -u)
 Validate(){
     if [ $1 -ne 0]
     then
-        echo "$2 failed"s
+        echo "$2 failed"
     else 
         echo "$2 success"
 }
