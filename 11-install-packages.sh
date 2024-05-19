@@ -17,6 +17,7 @@ Validate(){
         echo -e " $2 $R failed $N "
     else 
         echo -e " $2  $G success $N "
+    fi
 }
 
 if [ $ID -ne 0 ]
