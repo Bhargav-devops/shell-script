@@ -3,7 +3,7 @@
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
-Y="\E[33m]"
+Y="\E[33m"
 N="\e[0m"
 
 TimeStamp=$(date +%F-%H-%M-%S)
@@ -38,6 +38,6 @@ do
         yum install ${package} -y &>> $LogFile
         Validate $? " Installing ${package} "
     else
-        echo -e " $Y Already ${package} is  installed $N "
+        echo -e "$Y Already ${package} is  installed $N"
     fi
 done
