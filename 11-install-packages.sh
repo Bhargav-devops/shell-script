@@ -11,3 +11,4 @@ then
 else
     echo -e "you are root user"
 fi 
+echo " all arguments arguments passed $@ "
