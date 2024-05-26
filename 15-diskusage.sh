@@ -4,10 +4,10 @@ DiskUsage=$(df -hT | grep -vE 'tmp|File')
 DiskThreshold=1
 message=""
 
-while IFS= read lin
+while IFS= read -r line
 do
-    usage=$(echo $lin | awk '{print $6f}' | cut -d % -f1)
-    partition=$(echo $lin | awk '{print $1f}')
+    usage=$(echo $line | awk '{print $6f}' | cut -d % -f1)
+    partition=$(echo $line | awk '{print $1f}')
     if [ $usage -ge $DiskThreshold ]
     then 
         message+="High Disk Usage on $partition : $usage \n"
