@@ -16,4 +16,4 @@ do
     echo "password $password"
     echo "user id $user_id"
     echo "user full name $user_fullname"
-done < file
+done < $file
