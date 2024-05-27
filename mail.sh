@@ -5,6 +5,7 @@ AlertType=$2
 BodyType=$3
 echo "test $BodyType"
 EscapeBody=$(printf '%s\n' "$BodyType" | sed -e 's/[]\/$*.^[]/\\&/g');
+echo "test1 $EscapeBody"
 To_address=$4
 Subject=$5
 
