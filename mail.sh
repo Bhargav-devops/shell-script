@@ -6,6 +6,6 @@ BodyType=$3
 To_address=$4
 Subject=$5
 
-FinalBody=$(sed -e "s/To_Team/$To_Team/g" -e "s/Alert/$AlertType" -e "s/Body/$Body" template.html)
+FinalBody=$(sed -e "s/To_Team/$To_Team/g" -e "s/Alert/$AlertType" -e "s/Body/$Body/g" template.html)
 
 echo "$FinalBody" | mail -s $Subject $To_address
