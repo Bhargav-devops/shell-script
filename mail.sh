@@ -3,6 +3,7 @@
 To_Team=$1
 AlertType=$2
 BodyType=$3
+echo "$BodyType"
 EscapeBody=$(printf '%s\n' "$BodyType" | sed -e 's/[]\/$*.^[]/\\&/g');
 To_address=$4
 Subject=$5
