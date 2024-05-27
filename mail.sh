@@ -9,4 +9,4 @@ Subject=$5
 
 FinalBody=$(sed -e "s/To_Team/$To_Team/g" -e "s/Alert/$AlertType/g" -e "s/Body/$EscapeBody/g" template.html)
 
-echo "$FinalBody" | mail -s "$(echo -e "$Subject\nContent-Type: text/html")" $To_address
+echo "$FinalBody" | mail -s "$(echo -e "$Subject\nContent-Type: text/html")" "$To_address"
