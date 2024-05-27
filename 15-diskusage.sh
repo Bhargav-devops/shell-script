@@ -14,3 +14,4 @@ do
     fi
 done <<< $DiskUsage
 echo -e "message: $message"
+echo "$message" | mail -s "high disk usage" bhargav.devopsaws@gmail.com
