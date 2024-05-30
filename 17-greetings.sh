@@ -4,7 +4,7 @@ name=""
 wishes=""
 
 Usage() {
-echo " usage $(vasename $0) -n <name> -w <wishes> "   
+echo " usage $(basename $0) -n <name> -w <wishes> "   
 echo "options to use"
 echo "-n : give name (mandatory)"
 echo "-w: provide wishes"
@@ -23,7 +23,8 @@ while getopts ":n:w:h:" opt; do
     esac    
 done
 
-if [ -z $name ] || [ -z $wishes ]; then
+if [ -z $name ] || [ -z $wishes ]
+then
     echo "error both -n and -w are mandatory options"
     Usage
     exit 1
