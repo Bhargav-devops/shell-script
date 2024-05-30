@@ -29,4 +29,4 @@ if [ -z $name ] || [ -z $wishes ]; then
     exit 1
 fi
 
-echo "hello $name $wishes. iam learning shell"
+echo "hello $name $wishes iam learning shell"
