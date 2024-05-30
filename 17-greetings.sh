@@ -1,7 +1,7 @@
 #!/bin/bash
 
 name=""
-wishes=""
+wishes="Good morning"
 
 Usage() {
 echo " usage $(basename $0) -n <name> -w <wishes> "   
@@ -23,7 +23,7 @@ while getopts ":n:w:h:" opt; do
     esac    
 done
 
-if [ -z $name ] || [ -z $wishes ]
+if [ -z $name ] #|| [ -z $wishes ] make wishes optional and by default make wishes constant value
 then
     echo "error both -n and -w are mandatory options"
     Usage
