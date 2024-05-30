@@ -17,7 +17,7 @@ while getopts ":n:w:h:" opt; do
         n) name="$OPTARG";;
         w) wishes="$OPTARG";;
         h) echo "help option"; Usage;exit;;
-        \?) echo"invalid options $OPTARG"" >&2; Usage;exit;;
+        \?) echo"invalid options $OPTARG" >&2; Usage;exit;;
         :) Usage;exit
 
     esac    
