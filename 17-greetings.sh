@@ -3,7 +3,7 @@
 name=""
 wishes=""
 
-Usage(){
+Usage() {
 echo " usage $(vasename $0) -n <name> -w <wishes> "   
 echo "options to use"
 echo "-n : give name (mandatory)"
