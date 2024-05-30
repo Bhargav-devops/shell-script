@@ -12,7 +12,7 @@ echo "-h: display help with text"
 
 }
 
-while getopts "n:w:h" opt; do
+while getopts ":n:w:h:" opt; do
     case $opt in
         n) name="$OPTARG";;
         w) wishes="$OPTARG";;
