@@ -23,7 +23,7 @@ while getopts ":n:w:h:" opt; do
     esac    
 done
 
-if [ -z $name ] #|| [ -z $wishes ] 
+if [ -z $name ]
 then
     echo "error both -n and -w are mandatory options"
     Usage
