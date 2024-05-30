@@ -25,7 +25,8 @@ done
 
 if [ -z $name ] #|| [ -z $wishes ] make wishes optional and by default make wishes constant value
 then
-    echo "error both -n and -w are mandatory options"
+    #echo "error both -n and -w are mandatory options"
+    echo "error both -n  are mandatory option"
     Usage
     exit 1
 fi
