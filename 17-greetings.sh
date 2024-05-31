@@ -5,6 +5,7 @@ wishes="Good morning"
 
 Usage() {
 echo " usage $(basename $0) -n <name> -w <wishes> "   
+echo " usage $0 -n <name> -w <wishes> "   
 echo "options to use"
 echo "-n : give name (mandatory)"
 echo "-w: provide wishes"
