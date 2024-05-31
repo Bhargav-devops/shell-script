@@ -18,7 +18,7 @@ while getopts ":n:w:h:" opt; do
         w) wishes="$OPTARG";;
         h) echo "help option"; Usage;exit;;
         \?) echo "invalid options "$OPTARG"" >&2; Usage;exit;;
-        :) echo "test";Usage;exit
+        :) echo "this option invokes when we forget to provide the arugments";Usage;exit
 
     esac    
 done
@@ -26,7 +26,7 @@ done
 if [ -z $name ] #|| [ -z $wishes ] make wishes optional and by default make wishes constant value
 then
     #echo "error both -n and -w are mandatory options"
-    echo "error both -n  are mandatory option"
+    echo "error -n  are mandatory option"
     Usage
     exit 1
 fi
